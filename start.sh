@@ -20,14 +20,14 @@ YELLOW="\e[1;33m"
 BLUE="\e[1;34m"
 RESET="\e[0m"
 
-print_bold_with_outline "Welcome to Doge V4, user!"
+print_bold_with_outline "Welcome to Holycom V4, user!"
 
 if ! command -v git > /dev/null; then
     echo -e "${RED}[Error] Git is not installed. Please install Git and try again.${RESET}"
     exit 1
 fi
 
-echo -e "${BLUE}[1/4] Cloning Doge Unblocker repository...${RESET}"
+echo -e "${BLUE}[1/4] Cloning Holycom Unblocker repository...${RESET}"
 if git clone https://github.com/DogeNetwork/v4 > /dev/null 2>&1; then
     echo -e "${GREEN}[Success] Repository cloned successfully.${RESET}"
 else
@@ -49,10 +49,10 @@ echo -e "${BLUE}[3/4] Starting Doge Unblocker...${RESET}"
 npm start
 
 if [ $? -eq 0 ]; then
-    echo -e "${GREEN}[Success] Doge Unblocker started successfully.${RESET}"
-    echo -e "${YELLOW}[Info] You can access Doge V4 via localhost.${RESET}"
+    echo -e "${GREEN}[Success] Holycom Unblocker started successfully.${RESET}"
+    echo -e "${YELLOW}[Info] You can access Holycom V4 via localhost.${RESET}"
 else
-    echo -e "${RED}[Error] Failed to start Doge Unblocker. Please check the application logs for details.${RESET}"
+    echo -e "${RED}[Error] Failed to start Holycom Unblocker. Please check the application logs for details.${RESET}"
     exit 1
 fi
 
